@@ -27,3 +27,6 @@ print(es_anagrama("La cosa", "Sal aco"))    # True
 print(es_anagrama("Árbol", "labor"))        # True
 print(es_anagrama("Daniel", "Ladino"))      # True
 print(es_anagrama("Casa", "Saco"))          # True
+
+
+print("COMMIT PRUEBA");
