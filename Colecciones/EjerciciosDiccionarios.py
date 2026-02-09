@@ -62,7 +62,10 @@ for item, precio in cesta.items():
 print('Coste total: ', coste)
 
 #Ejercicio8
-frase = input("Introduzca una frase: <palabra>:<traducción>, <palabra>:<traducción>")
+frase = "hola:hello, adios:bye"
 
-for item in frase.split(","):
+for item in frase.split(", "):
     clave, valor = item.split(":")
+    diccionario = {clave: valor}
+
+print(diccionario)
