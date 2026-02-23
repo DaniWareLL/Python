@@ -108,4 +108,15 @@ with open("archivos/datos.txt", "r") as ficheroLectura:
 print (diccionario)
 
 
+# Ejer8
+# Extra comparar ficheros linea por linea
 
+with open("datos1.txt", "r") as fichero1, open("datos2.txt", "r") as fichero2:
+    lineas1 = fichero1.readlines()
+    lineas2 = fichero2.readlines()
+
+for i, (linea1, linea2) in enumerate(zip(lineas1, lineas2)):
+    if linea1 != linea2:
+        print(f"Diferencia en la línea {i+1}:")
+        print(f"Fichero 1: {linea1.strip()}")
+        print(f"Fichero 2: {linea2.strip()}")

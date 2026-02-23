@@ -60,7 +60,7 @@ print("Archivo productos.csv creado correctamente.")
 # Filtrar filas de un archivo csv con salario superior a 6000
 with open('archivos/empleados.csv') as csv_file:
     lector = csv.DictReader(csv_file)
-    for row in lector:
+    for row in lector: # row -> diccionario {}
         if int(row["Salario"]) > 3000:
             print(row)
 
